@@ -8,6 +8,7 @@ export function Masthead({ onMenu, menuOpen }: { onMenu: () => void; menuOpen: b
   const navigate = useNavigate()
   const { pathname, search } = useLocation()
   const { theme, cycle } = useTheme()
+  const current = LANGS.find((l) => l.code === lang) ?? LANGS[0]
 
   const switchLang = (next: Lang) => {
     const rest = pathname.split('/').slice(2).join('/')
@@ -32,18 +33,20 @@ export function Masthead({ onMenu, menuOpen }: { onMenu: () => void; menuOpen: b
         >
           {t('nav.menu')}
         </button>
-        <select
-          aria-label={t('lang.label')}
-          value={lang}
-          onChange={(e) => switchLang(e.target.value as Lang)}
-          style={{ width: 'auto', minHeight: 32, padding: '4px 28px 4px 8px' }}
-        >
-          {LANGS.map((l) => (
-            <option key={l.code} value={l.code}>
-              {l.label}
-            </option>
-          ))}
-        </select>
+        {/* the native select stays (keyboard, phone pickers) but is laid transparently over a label we can style */}
+        <span className="lang-pick">
+          <span aria-hidden="true">
+            <span className="long">{current.label}</span>
+            <span className="short">{current.short}</span>
+          </span>
+          <select aria-label={t('lang.label')} value={lang} onChange={(e) => switchLang(e.target.value as Lang)}>
+            {LANGS.map((l) => (
+              <option key={l.code} value={l.code}>
+                {l.label}
+              </option>
+            ))}
+          </select>
+        </span>
         <button
           type="button"
           className="btn ghost sm"

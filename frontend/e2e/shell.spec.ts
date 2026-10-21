@@ -125,4 +125,42 @@ test.describe('phone layout', () => {
       expect(overflow, path).toBe(false)
     }
   })
+
+  test('typing fields are at least 16px, so iOS does not zoom in on focus', async ({ page }) => {
+    for (const path of ['/en/json', '/en/totp', '/en/regex', '/en/urlua']) {
+      await page.goto(path)
+      const small = await page.evaluate(() =>
+        Array.from(
+          document.querySelectorAll(
+            'input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]), textarea, select',
+          ),
+        )
+          .filter((el) => parseFloat(getComputedStyle(el).fontSize) < 16)
+          .map((el) => el.outerHTML.slice(0, 80)),
+      )
+      expect(small, path).toEqual([])
+    }
+  })
+})
+
+test.describe('narrowest phone', () => {
+  test.use({ viewport: { width: 320, height: 640 } })
+
+  test('the masthead keeps wordmark and all three controls on one line in every language', async ({ page }) => {
+    for (const lang of ['zh-TW', 'en', 'zh-CN', 'es', 'ja']) {
+      await page.goto(`/${lang}/`)
+      const tops = await page.evaluate(() =>
+        Array.from(document.querySelectorAll('.wordmark, .mast-tools > *')).map((el) =>
+          Math.round(el.getBoundingClientRect().top + el.getBoundingClientRect().height / 2),
+        ),
+      )
+      expect(tops, lang).toHaveLength(4)
+      expect(Math.max(...tops) - Math.min(...tops), lang).toBeLessThanOrEqual(4)
+    }
+    // the short label sits over a real select, which still switches language
+    await page.getByLabel('言語').selectOption('en')
+    await expect(page).toHaveURL(/\/en\/$/)
+    await expect(page.locator('.lang-pick .short')).toBeVisible()
+    await expect(page.locator('.lang-pick .short')).toHaveText('EN')
+  })
 })

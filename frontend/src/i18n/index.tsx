@@ -2,11 +2,11 @@ import { createContext, useCallback, useContext } from 'react'
 import common from './common.json'
 
 export const LANGS = [
-  { code: 'zh-TW', label: '繁體中文' },
-  { code: 'en', label: 'English' },
-  { code: 'zh-CN', label: '简体中文' },
-  { code: 'es', label: 'Español' },
-  { code: 'ja', label: '日本語' },
+  { code: 'zh-TW', label: '繁體中文', short: '繁中' },
+  { code: 'en', label: 'English', short: 'EN' },
+  { code: 'zh-CN', label: '简体中文', short: '简中' },
+  { code: 'es', label: 'Español', short: 'ES' },
+  { code: 'ja', label: '日本語', short: '日本語' },
 ] as const
 
 export type Lang = (typeof LANGS)[number]['code']

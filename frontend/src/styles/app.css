@@ -197,6 +197,46 @@ pre {
 .menu-btn {
   display: none;
 }
+.lang-pick {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  padding: 0 11px;
+  border: 1px solid var(--rule);
+  font: 500 0.8125rem/1 var(--sans);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.lang-pick::after {
+  content: '';
+  border: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  border-bottom: 0;
+}
+.lang-pick:hover {
+  background: var(--paper-2);
+}
+.lang-pick:focus-within {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+.lang-pick select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 16px; /* below 16px iOS zooms the page when the picker opens */
+}
+.lang-pick .short {
+  display: none;
+}
 
 /* ---------- shell ---------- */
 .shell {
@@ -868,28 +908,108 @@ input[type='file'] {
   }
 }
 
-/* narrow phones: the masthead must fit wordmark + three controls on one line */
+/* phones */
+@media (max-width: 600px) {
+  /* masthead: quiet text controls split by hairlines, like a paper's section line, instead of three boxes */
+  .mast {
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+  .mast-tools {
+    gap: 0;
+  }
+  .mast-tools > * + * {
+    border-left: 1px solid var(--hair);
+  }
+  .mast-tools .btn.sm,
+  .mast-tools .lang-pick {
+    min-height: 40px;
+    padding: 0 10px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background: transparent;
+    color: var(--ink);
+  }
+  .mast-tools .btn.sm:first-child {
+    border-left: 0;
+  }
+  .mast-tools .btn.sm:last-child {
+    padding-right: 0;
+  }
+  .mast-tools .btn.sm:hover,
+  .mast-tools .lang-pick:hover {
+    background: transparent;
+    border-left-color: var(--hair);
+  }
+  @media (hover: hover) {
+    .mast-tools .btn.sm:hover,
+    .mast-tools .lang-pick:hover {
+      color: var(--red);
+    }
+  }
+  .menu-btn[aria-expanded='true'] {
+    color: var(--red) !important;
+  }
+  .lang-pick .long {
+    display: none;
+  }
+  .lang-pick .short {
+    display: inline;
+  }
+
+  /* contents: every tool but one runs locally, so only the exception keeps its tag */
+  .home .lede {
+    font-size: 1.0625rem;
+  }
+  .contents a {
+    grid-template-columns: 30px minmax(0, 1fr) auto;
+  }
+  .contents .tag:not(.hi) {
+    display: none;
+  }
+  .contents .ds {
+    grid-column: 2 / -1;
+  }
+
+  /* iOS zooms into any field set below 16px and stays zoomed; the code editor's mirror must match its textarea */
+  input[type='text'],
+  input[type='number'],
+  input[type='search'],
+  input[type='url'],
+  input[type='password'],
+  input:not([type]),
+  textarea,
+  select,
+  input.mono,
+  textarea.mono,
+  .code-mirror {
+    font-size: 16px !important;
+  }
+
+  /* fingers, not cursors */
+  .btn.sm {
+    min-height: 36px;
+  }
+  input[type='checkbox'],
+  input[type='radio'] {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* narrow phones (320–420px): the masthead must still fit wordmark + three controls on one line */
 @media (max-width: 420px) {
   .mast {
-    gap: 8px;
     padding-left: 12px;
     padding-right: 12px;
   }
   .wordmark {
-    font-size: 1.2rem;
-  }
-  .mast-tools {
-    gap: 4px;
+    font-size: 1.3rem;
   }
   .mast-tools .btn.sm,
-  .mast-tools select {
-    padding-left: 7px;
-    padding-right: 7px;
-  }
-  .mast-tools select {
-    padding-right: 22px !important;
-    background-position:
-      calc(100% - 12px) 50%,
-      calc(100% - 7px) 50%;
+  .mast-tools .lang-pick {
+    padding: 0 8px;
   }
 }
