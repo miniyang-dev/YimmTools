@@ -391,6 +391,18 @@ def test_security_headers_and_no_docs():
     assert client().get("/api/myip").status_code == 404
 
 
+def test_csp_allows_only_cloudflare_analytics_as_a_third_party():
+    csp = client().get("/api/health").headers["content-security-policy"]
+    directives = dict(d.strip().split(" ", 1) for d in csp.split(";") if d.strip())
+    assert directives["script-src"] == "'self' https://static.cloudflareinsights.com"
+    assert directives["connect-src"] == "'self' https://cloudflareinsights.com"
+    # everything else stays first-party only
+    assert directives["default-src"] == "'self'"
+    assert directives["font-src"] == "'self'"
+    assert directives["frame-ancestors"] == "'none'"
+    assert "unsafe-eval" not in csp
+
+
 def test_spa_fallback_and_path_traversal(tmp_path):
     (tmp_path / "assets").mkdir()
     (tmp_path / "index.html").write_text("<!doctype html>index")

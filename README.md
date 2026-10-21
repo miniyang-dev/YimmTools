@@ -63,6 +63,7 @@ cd ../backend && ./.venv/Scripts/python -m uvicorn app.main:app --host 127.0.0.1
 - 連線釘住解析出的 IP（Host／SNI 帶原網域），重新導向逐跳重新驗證，最多 4 跳。
 - 每次 GET 不讀內容；逾時 5 秒、整體 20 秒；每 IP 每分鐘 12 次真實查詢（無效網址、快取命中另計，不占額度）；全站併發有上限，超過先排隊。
 - 回應含 CSP、`nosniff`、`no-referrer`；`/api/*` 不快取。
+- CSP 唯一放行的第三方是 Cloudflare Web Analytics（由 Cloudflare 在邊緣自動插入）：腳本 `static.cloudflareinsights.com`、回報端點 `cloudflareinsights.com`。它只記錄頁面瀏覽，不會讀取工具裡輸入的內容。若在 Cloudflare 後台關掉 Web Analytics，可把 `backend/app/main.py` 的這兩個來源一併移除。
 
 ## 測試與品質檢查
 

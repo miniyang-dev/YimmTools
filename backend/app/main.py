@@ -18,9 +18,14 @@ from .ssrf import UnsafeTarget, parse_target
 
 DEFAULT_DIST = Path(os.getenv("YIMM_DIST") or Path(__file__).resolve().parents[2] / "frontend" / "dist")
 
+# Cloudflare Web Analytics (injected by Cloudflare at the edge) is the only third party allowed:
+# its beacon script, and the endpoint it reports page views to. Nothing a visitor types is sent.
+CLOUDFLARE_ANALYTICS_SCRIPT = "https://static.cloudflareinsights.com"
+CLOUDFLARE_ANALYTICS_REPORT = "https://cloudflareinsights.com"
+
 CSP = (
-    "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; "
-    "img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; "
+    f"default-src 'self'; script-src 'self' {CLOUDFLARE_ANALYTICS_SCRIPT}; style-src 'self' 'unsafe-inline'; "
+    f"img-src 'self' data: blob:; font-src 'self'; connect-src 'self' {CLOUDFLARE_ANALYTICS_REPORT}; "
     "object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'"
 )
 PERMISSIONS_POLICY = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
