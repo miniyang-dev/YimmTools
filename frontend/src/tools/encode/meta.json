@@ -1,0 +1,28 @@
+{
+  "id": "encode",
+  "group": "data",
+  "order": 4,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "Base64／URL 編解碼",
+      "desc": "Base64 與網址編碼，支援 UTF-8 與 URL-safe。"
+    },
+    "en": {
+      "name": "Base64 & URL encoding",
+      "desc": "Base64 and percent-encoding with UTF-8 and URL-safe support."
+    },
+    "zh-CN": {
+      "name": "Base64／URL 编解码",
+      "desc": "Base64 与网址编码，支持 UTF-8 与 URL-safe。"
+    },
+    "es": {
+      "name": "Codificar Base64 y URL",
+      "desc": "Base64 y codificación porcentual, con UTF-8 y variante URL-safe."
+    },
+    "ja": {
+      "name": "Base64・URL エンコード",
+      "desc": "Base64 とパーセントエンコード。UTF-8 と URL セーフに対応。"
+    }
+  }
+}

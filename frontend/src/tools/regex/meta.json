@@ -1,0 +1,28 @@
+{
+  "id": "regex",
+  "group": "text",
+  "order": 11,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "正則與 Diff",
+      "desc": "即時測試正規表達式，並比對兩段文字的差異。"
+    },
+    "en": {
+      "name": "Regex & diff",
+      "desc": "Test regular expressions live and compare two texts."
+    },
+    "zh-CN": {
+      "name": "正则与 Diff",
+      "desc": "实时测试正规表达式，并比对两段文字的差异。"
+    },
+    "es": {
+      "name": "Regex y diff",
+      "desc": "Prueba expresiones regulares en vivo y compara dos textos."
+    },
+    "ja": {
+      "name": "正規表現と Diff",
+      "desc": "正規表現をリアルタイムでテストし、2 つのテキストの差分を比較します。"
+    }
+  }
+}

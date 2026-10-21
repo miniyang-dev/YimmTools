@@ -1,0 +1,28 @@
+{
+  "id": "password",
+  "group": "security",
+  "order": 7,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "密碼與 UUID",
+      "desc": "用瀏覽器的安全亂數產生強密碼與 UUID。"
+    },
+    "en": {
+      "name": "Password & UUID",
+      "desc": "Strong passwords and UUIDs from your browser's secure random source."
+    },
+    "zh-CN": {
+      "name": "密码与 UUID",
+      "desc": "用浏览器的安全乱数生成强密码与 UUID。"
+    },
+    "es": {
+      "name": "Contraseñas y UUID",
+      "desc": "Contraseñas seguras y UUID con el generador aleatorio seguro del navegador."
+    },
+    "ja": {
+      "name": "パスワード・UUID 生成",
+      "desc": "ブラウザの安全な乱数で強力なパスワードと UUID を生成します。"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "time",
+  "group": "text",
+  "order": 10,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "時間戳與 Cron",
+      "desc": "時間戳與日期互轉，把 Cron 翻成白話並列出下次執行。"
+    },
+    "en": {
+      "name": "Timestamp & cron",
+      "desc": "Convert timestamps and dates, explain cron in plain words and list the next runs."
+    },
+    "zh-CN": {
+      "name": "时间戳与 Cron",
+      "desc": "时间戳与日期互转，把 Cron 翻成白话并列出下次运行。"
+    },
+    "es": {
+      "name": "Marca de tiempo y cron",
+      "desc": "Convierte marcas de tiempo y fechas, explica cron con palabras y lista las próximas ejecuciones."
+    },
+    "ja": {
+      "name": "タイムスタンプと Cron",
+      "desc": "タイムスタンプと日時を相互変換し、Cron を平易な言葉で説明して次回実行を一覧します。"
+    }
+  }
+}

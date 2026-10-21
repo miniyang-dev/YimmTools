@@ -1,0 +1,28 @@
+{
+  "id": "hash",
+  "group": "security",
+  "order": 8,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "Hash／HMAC",
+      "desc": "計算 MD5、SHA 系列雜湊與 HMAC。"
+    },
+    "en": {
+      "name": "Hash & HMAC",
+      "desc": "Compute MD5, SHA digests and HMAC."
+    },
+    "zh-CN": {
+      "name": "Hash／HMAC",
+      "desc": "计算 MD5、SHA 系列哈希与 HMAC。"
+    },
+    "es": {
+      "name": "Hash y HMAC",
+      "desc": "Calcula MD5, resúmenes SHA y HMAC."
+    },
+    "ja": {
+      "name": "ハッシュ・HMAC",
+      "desc": "MD5、SHA 系ハッシュと HMAC を計算します。"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "json",
+  "group": "data",
+  "order": 2,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "JSON 格式化",
+      "desc": "格式化、壓縮與驗證 JSON，錯誤會指出位置。"
+    },
+    "en": {
+      "name": "JSON formatter",
+      "desc": "Format, minify and validate JSON, with the error position pointed out."
+    },
+    "zh-CN": {
+      "name": "JSON 格式化",
+      "desc": "格式化、压缩与验证 JSON，错误会指出位置。"
+    },
+    "es": {
+      "name": "Formateador JSON",
+      "desc": "Formatea, minimiza y valida JSON, señalando la posición del error."
+    },
+    "ja": {
+      "name": "JSON 整形",
+      "desc": "JSON の整形・圧縮・検証を行い、エラー位置を示します。"
+    }
+  }
+}

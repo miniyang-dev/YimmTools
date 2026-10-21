@@ -1,0 +1,67 @@
+{
+  "zh-TW": {
+    "kind": "編碼類型",
+    "direction": "方向",
+    "encode": "編碼",
+    "decode": "解碼",
+    "urlSafe": "URL-safe（用 - _ 取代 + /，省略 =）",
+    "whole": "保留網址結構（encodeURI）",
+    "input": "輸入",
+    "placeholder": "輸入要編碼或解碼的文字…",
+    "errB64": "這不是有效的 Base64，或解出來不是 UTF-8 文字。",
+    "errUrl": "網址編碼格式不正確。",
+    "emptyOut": "結果會顯示在這裡。"
+  },
+  "en": {
+    "kind": "Encoding",
+    "direction": "Direction",
+    "encode": "Encode",
+    "decode": "Decode",
+    "urlSafe": "URL-safe (- _ instead of + /, no =)",
+    "whole": "Keep URL structure (encodeURI)",
+    "input": "Input",
+    "placeholder": "Enter text to encode or decode…",
+    "errB64": "That isn't valid Base64, or it doesn't decode to UTF-8 text.",
+    "errUrl": "The percent-encoding is malformed.",
+    "emptyOut": "The result appears here."
+  },
+  "zh-CN": {
+    "kind": "编码类型",
+    "direction": "方向",
+    "encode": "编码",
+    "decode": "解码",
+    "urlSafe": "URL-safe（用 - _ 取代 + /，省略 =）",
+    "whole": "保留网址结构（encodeURI）",
+    "input": "输入",
+    "placeholder": "输入要编码或解码的文字…",
+    "errB64": "这不是有效的 Base64，或解出来不是 UTF-8 文字。",
+    "errUrl": "网址编码格式不正确。",
+    "emptyOut": "结果会显示在这里。"
+  },
+  "es": {
+    "kind": "Codificación",
+    "direction": "Dirección",
+    "encode": "Codificar",
+    "decode": "Decodificar",
+    "urlSafe": "URL-safe (- _ en lugar de + /, sin =)",
+    "whole": "Conservar la estructura de la URL (encodeURI)",
+    "input": "Entrada",
+    "placeholder": "Escribe el texto que quieres codificar o decodificar…",
+    "errB64": "No es Base64 válido, o no se decodifica a texto UTF-8.",
+    "errUrl": "La codificación porcentual está mal formada.",
+    "emptyOut": "El resultado aparecerá aquí."
+  },
+  "ja": {
+    "kind": "エンコード方式",
+    "direction": "方向",
+    "encode": "エンコード",
+    "decode": "デコード",
+    "urlSafe": "URL セーフ（+ / の代わりに - _、= なし）",
+    "whole": "URL の構造を保つ（encodeURI）",
+    "input": "入力",
+    "placeholder": "エンコード／デコードするテキストを入力…",
+    "errB64": "有効な Base64 ではないか、UTF-8 テキストにデコードできません。",
+    "errUrl": "パーセントエンコードの形式が正しくありません。",
+    "emptyOut": "結果がここに表示されます。"
+  }
+}

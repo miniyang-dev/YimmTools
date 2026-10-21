@@ -1,0 +1,28 @@
+{
+  "id": "image",
+  "group": "image",
+  "order": 1,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "圖片壓縮與轉換",
+      "desc": "在瀏覽器內縮小檔案、轉成 WebP／JPEG／PNG，圖片不會上傳。"
+    },
+    "en": {
+      "name": "Image compress & convert",
+      "desc": "Shrink files and convert to WebP, JPEG or PNG in your browser. Images are never uploaded."
+    },
+    "zh-CN": {
+      "name": "图片压缩与转换",
+      "desc": "在浏览器内缩小文件、转成 WebP／JPEG／PNG，图片不会上传。"
+    },
+    "es": {
+      "name": "Comprimir y convertir imágenes",
+      "desc": "Reduce el tamaño y convierte a WebP, JPEG o PNG en tu navegador. Las imágenes no se suben."
+    },
+    "ja": {
+      "name": "画像の圧縮・変換",
+      "desc": "ブラウザ内でサイズを縮小し、WebP・JPEG・PNG に変換します。画像はアップロードされません。"
+    }
+  }
+}

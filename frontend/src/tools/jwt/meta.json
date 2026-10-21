@@ -1,0 +1,28 @@
+{
+  "id": "jwt",
+  "group": "security",
+  "order": 9,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "JWT 解碼",
+      "desc": "解開 JWT 的標頭與內容，檢視到期時間。"
+    },
+    "en": {
+      "name": "JWT decoder",
+      "desc": "Read a JWT's header and payload and check when it expires."
+    },
+    "zh-CN": {
+      "name": "JWT 解码",
+      "desc": "解开 JWT 的标头与内容，查看到期时间。"
+    },
+    "es": {
+      "name": "Decodificador JWT",
+      "desc": "Lee la cabecera y el contenido de un JWT y comprueba cuándo caduca."
+    },
+    "ja": {
+      "name": "JWT デコーダー",
+      "desc": "JWT のヘッダーとペイロードを読み取り、有効期限を確認します。"
+    }
+  }
+}

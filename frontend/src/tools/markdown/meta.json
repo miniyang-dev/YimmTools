@@ -1,0 +1,28 @@
+{
+  "id": "markdown",
+  "group": "text",
+  "order": 12,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "Markdown 預覽",
+      "desc": "左邊寫 Markdown，右邊即時預覽。"
+    },
+    "en": {
+      "name": "Markdown preview",
+      "desc": "Write Markdown on the left, see it rendered on the right."
+    },
+    "zh-CN": {
+      "name": "Markdown 预览",
+      "desc": "左边写 Markdown，右边实时预览。"
+    },
+    "es": {
+      "name": "Vista previa de Markdown",
+      "desc": "Escribe Markdown a la izquierda y míralo renderizado a la derecha."
+    },
+    "ja": {
+      "name": "Markdown プレビュー",
+      "desc": "左に Markdown を書くと、右にプレビューが表示されます。"
+    }
+  }
+}

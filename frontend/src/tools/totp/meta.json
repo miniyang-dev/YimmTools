@@ -1,0 +1,29 @@
+{
+  "id": "totp",
+  "group": "security",
+  "order": 6,
+  "server": false,
+  "badge": "2FA",
+  "strings": {
+    "zh-TW": {
+      "name": "TOTP 驗證碼",
+      "desc": "貼上 Base32 密鑰，立即得到動態驗證碼。"
+    },
+    "en": {
+      "name": "TOTP codes",
+      "desc": "Paste a Base32 secret and get the live one-time code."
+    },
+    "zh-CN": {
+      "name": "TOTP 验证码",
+      "desc": "粘贴 Base32 密钥，立即得到动态验证码。"
+    },
+    "es": {
+      "name": "Códigos TOTP",
+      "desc": "Pega una clave Base32 y obtén el código de un solo uso al instante."
+    },
+    "ja": {
+      "name": "TOTP ワンタイムコード",
+      "desc": "Base32 の秘密鍵を貼り付けると、現在のワンタイムコードが表示されます。"
+    }
+  }
+}

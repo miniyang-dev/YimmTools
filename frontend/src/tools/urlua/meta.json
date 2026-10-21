@@ -1,0 +1,28 @@
+{
+  "id": "urlua",
+  "group": "text",
+  "order": 13,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "URL 與 User-Agent 解析",
+      "desc": "拆解網址的各個部分，辨識瀏覽器與系統。"
+    },
+    "en": {
+      "name": "URL & User-Agent parser",
+      "desc": "Break a URL into parts and identify the browser and OS."
+    },
+    "zh-CN": {
+      "name": "URL 与 User-Agent 解析",
+      "desc": "拆解网址的各个部分，辨识浏览器与系统。"
+    },
+    "es": {
+      "name": "Analizar URL y User-Agent",
+      "desc": "Descompone una URL e identifica el navegador y el sistema."
+    },
+    "ja": {
+      "name": "URL・User-Agent 解析",
+      "desc": "URL を各部に分解し、ブラウザと OS を判別します。"
+    }
+  }
+}

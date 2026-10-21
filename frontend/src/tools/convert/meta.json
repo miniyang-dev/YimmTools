@@ -1,0 +1,28 @@
+{
+  "id": "convert",
+  "group": "data",
+  "order": 3,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "YAML／CSV／JSON 互轉",
+      "desc": "在 YAML、CSV 與 JSON 之間來回轉換。"
+    },
+    "en": {
+      "name": "YAML · CSV · JSON converter",
+      "desc": "Convert back and forth between YAML, CSV and JSON."
+    },
+    "zh-CN": {
+      "name": "YAML／CSV／JSON 互转",
+      "desc": "在 YAML、CSV 与 JSON 之间来回转换。"
+    },
+    "es": {
+      "name": "Conversor YAML · CSV · JSON",
+      "desc": "Convierte entre YAML, CSV y JSON en ambos sentidos."
+    },
+    "ja": {
+      "name": "YAML・CSV・JSON 変換",
+      "desc": "YAML、CSV、JSON の間で相互に変換します。"
+    }
+  }
+}

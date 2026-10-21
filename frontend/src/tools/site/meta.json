@@ -1,0 +1,28 @@
+{
+  "id": "site",
+  "group": "net",
+  "order": 14,
+  "server": true,
+  "strings": {
+    "zh-TW": {
+      "name": "網站環境偵測",
+      "desc": "輸入網址，辨識 CDN、WAF 與雲端供應商。"
+    },
+    "en": {
+      "name": "Site stack inspector",
+      "desc": "Enter a URL to identify its CDN, WAF and cloud provider."
+    },
+    "zh-CN": {
+      "name": "网站环境侦测",
+      "desc": "输入网址，辨识 CDN、WAF 与云端供应商。"
+    },
+    "es": {
+      "name": "Inspector de infraestructura web",
+      "desc": "Introduce una URL para identificar su CDN, WAF y proveedor de nube."
+    },
+    "ja": {
+      "name": "サイト環境チェック",
+      "desc": "URL を入力して CDN・WAF・クラウド事業者を判別します。"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "qr",
+  "group": "data",
+  "order": 5,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "QR Code 產生與解碼",
+      "desc": "把文字變成 QR Code，或從圖片讀出內容。"
+    },
+    "en": {
+      "name": "QR code maker & reader",
+      "desc": "Turn text into a QR code, or read one from an image."
+    },
+    "zh-CN": {
+      "name": "QR Code 生成与解码",
+      "desc": "把文字变成 QR Code，或从图片读出内容。"
+    },
+    "es": {
+      "name": "Crear y leer códigos QR",
+      "desc": "Convierte texto en un código QR o lee uno desde una imagen."
+    },
+    "ja": {
+      "name": "QR コードの作成・読み取り",
+      "desc": "テキストから QR コードを作成し、画像から内容を読み取ります。"
+    }
+  }
+}
