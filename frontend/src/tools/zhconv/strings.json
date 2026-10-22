@@ -1,0 +1,72 @@
+{
+  "zh-TW": {
+    "target": "轉換成",
+    "toTw": "繁體（台灣）",
+    "toHk": "繁體（香港）",
+    "toCn": "簡體",
+    "phrases": "連用語一起轉換",
+    "input": "原文",
+    "placeholder": "貼上要轉換的中文…",
+    "loading": "正在載入字典…",
+    "loadFailed": "字典載入失敗，請重新整理頁面再試一次。",
+    "changed": "改了 {n} 個字",
+    "unchanged": "沒有需要轉換的字",
+    "emptyOut": "轉換結果會顯示在這裡，改過的字會標出來。"
+  },
+  "en": {
+    "target": "Convert to",
+    "toTw": "Traditional (Taiwan)",
+    "toHk": "Traditional (Hong Kong)",
+    "toCn": "Simplified",
+    "phrases": "Also convert regional wording",
+    "input": "Text",
+    "placeholder": "Paste Chinese text to convert…",
+    "loading": "Loading the dictionary…",
+    "loadFailed": "The dictionary failed to load. Reload the page and try again.",
+    "changed": "{n} characters changed",
+    "unchanged": "nothing to convert",
+    "emptyOut": "The converted text appears here, with changed characters marked."
+  },
+  "zh-CN": {
+    "target": "转换成",
+    "toTw": "繁体（台湾）",
+    "toHk": "繁体（香港）",
+    "toCn": "简体",
+    "phrases": "连用语一起转换",
+    "input": "原文",
+    "placeholder": "粘贴要转换的中文…",
+    "loading": "正在加载字典…",
+    "loadFailed": "字典加载失败，请刷新页面再试一次。",
+    "changed": "改了 {n} 个字",
+    "unchanged": "没有需要转换的字",
+    "emptyOut": "转换结果会显示在这里，改过的字会标出来。"
+  },
+  "es": {
+    "target": "Convertir a",
+    "toTw": "Tradicional (Taiwán)",
+    "toHk": "Tradicional (Hong Kong)",
+    "toCn": "Simplificado",
+    "phrases": "Convertir también el vocabulario regional",
+    "input": "Texto",
+    "placeholder": "Pega el texto en chino que quieres convertir…",
+    "loading": "Cargando el diccionario…",
+    "loadFailed": "No se pudo cargar el diccionario. Recarga la página e inténtalo de nuevo.",
+    "changed": "{n} caracteres cambiados",
+    "unchanged": "nada que convertir",
+    "emptyOut": "El texto convertido aparecerá aquí, con los caracteres cambiados marcados."
+  },
+  "ja": {
+    "target": "変換先",
+    "toTw": "繁体字（台湾）",
+    "toHk": "繁体字（香港）",
+    "toCn": "簡体字",
+    "phrases": "地域の言い回しも変換",
+    "input": "原文",
+    "placeholder": "変換する中国語を貼り付け…",
+    "loading": "辞書を読み込んでいます…",
+    "loadFailed": "辞書を読み込めませんでした。ページを再読み込みしてもう一度お試しください。",
+    "changed": "{n} 文字を変換",
+    "unchanged": "変換する文字はありません",
+    "emptyOut": "変換結果がここに表示され、変わった文字に印が付きます。"
+  }
+}

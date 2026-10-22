@@ -1,7 +1,7 @@
 {
   "id": "qr",
   "group": "data",
-  "order": 5,
+  "order": 6,
   "server": false,
   "strings": {
     "zh-TW": {

@@ -17,11 +17,13 @@ test.describe('routing', () => {
     await expect(page).toHaveURL(/\/en\/$/)
   })
 
-  test('home lists exactly the 14 tools, numbered 01–14', async ({ page }) => {
+  test('home lists every tool, numbered from 01 without gaps', async ({ page }) => {
     await page.goto('/en/')
+    expect(TOOL_IDS).toHaveLength(17)
     await expect(page.locator('.contents a')).toHaveCount(TOOL_IDS.length)
+    await expect(page.locator('.contents .no')).toHaveText(TOOL_IDS.map((_, i) => String(i + 1).padStart(2, '0')))
     await expect(page.locator('.index a .no').first()).toHaveText('01')
-    await expect(page.locator('.index a .no').last()).toHaveText('14')
+    await expect(page.locator('.index a .no').last()).toHaveText('17')
     await expect(page.locator('a[href$="/myip"]')).toHaveCount(0)
     await expect(page.locator('.contents .tag.hi')).toHaveCount(1) // only the site inspector needs the server
   })

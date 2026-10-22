@@ -1,0 +1,28 @@
+{
+  "id": "text",
+  "group": "text",
+  "order": 11,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "字數統計與大小寫",
+      "desc": "計算字數、字元與閱讀時間，轉換大小寫、程式命名與全形半形。"
+    },
+    "en": {
+      "name": "Word count & case",
+      "desc": "Count words, characters and reading time; change case, naming style and full/half width."
+    },
+    "zh-CN": {
+      "name": "字数统计与大小写",
+      "desc": "计算字数、字符与阅读时间，转换大小写、程序命名与全角半角。"
+    },
+    "es": {
+      "name": "Contar palabras y mayúsculas",
+      "desc": "Cuenta palabras, caracteres y tiempo de lectura; cambia mayúsculas, estilo de nombres y ancho."
+    },
+    "ja": {
+      "name": "文字数カウント・大文字小文字",
+      "desc": "文字数・語数・読了時間を数え、大文字小文字、命名規則、全角半角を変換。"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "id": "password",
   "group": "security",
-  "order": 7,
+  "order": 8,
   "server": false,
   "strings": {
     "zh-TW": {

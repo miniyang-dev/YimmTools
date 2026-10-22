@@ -94,14 +94,17 @@ export function Seg<T extends string>({
   value,
   onChange,
   label,
+  fill = false,
 }: {
   options: { value: T; label: string }[]
   value: T
   onChange: (v: T) => void
   label: string
+  /** on phones, lay the buttons out as an even grid instead of letting them wrap raggedly */
+  fill?: boolean
 }) {
   return (
-    <div className="seg" role="group" aria-label={label}>
+    <div className={fill ? 'seg fill' : 'seg'} role="group" aria-label={label}>
       {options.map((o) => (
         <button
           key={o.value}
@@ -117,9 +120,10 @@ export function Seg<T extends string>({
   )
 }
 
-export function Kv({ rows }: { rows: [string, ReactNode, boolean?][] }) {
+/** Label/value rows. `compact` keeps label and value side by side on phones (for short values such as counts). */
+export function Kv({ rows, compact = false }: { rows: [string, ReactNode, boolean?][]; compact?: boolean }) {
   return (
-    <dl className="kv">
+    <dl className={compact ? 'kv compact' : 'kv'}>
       {rows.map(([k, v, mono], i) => (
         <div key={i} style={{ display: 'contents' }}>
           <dt>{k}</dt>

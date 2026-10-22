@@ -1,7 +1,7 @@
 {
   "id": "totp",
   "group": "security",
-  "order": 6,
+  "order": 7,
   "server": false,
   "badge": "2FA",
   "strings": {

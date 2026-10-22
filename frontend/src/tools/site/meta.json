@@ -1,7 +1,7 @@
 {
   "id": "site",
   "group": "net",
-  "order": 14,
+  "order": 17,
   "server": true,
   "strings": {
     "zh-TW": {

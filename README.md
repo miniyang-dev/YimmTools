@@ -1,6 +1,6 @@
 # YimmTool
 
-免註冊的線上小工具站，資料留在瀏覽器。14 項工具、5 種語系（繁中、English、简体中文、Español、日本語）、日報／夜報兩種主題。
+免註冊的線上小工具站，資料留在瀏覽器。17 項工具、5 種語系（繁中、English、简体中文、Español、日本語）、日報／夜報兩種主題。
 
 - 前端：Vite + React + TypeScript（`frontend/`）
 - 後端：FastAPI（`backend/`）。提供建置後的網站，以及一個需要伺服器的工具：網站環境偵測。
@@ -8,7 +8,7 @@
 
 ## 工具
 
-圖片壓縮／轉換 · JSON · YAML／CSV／JSON 互轉 · Base64／URL · QR Code · TOTP · 密碼與 UUID · Hash／HMAC · JWT · 時間戳與 Cron · 正則與 Diff · Markdown 預覽 · URL 與 User-Agent 解析 · 網站環境偵測（伺服器）
+圖片壓縮／轉換 · 色彩轉換與對比 · JSON · YAML／CSV／JSON 互轉 · Base64／URL · QR Code · TOTP · 密碼與 UUID · Hash／HMAC · JWT · 字數統計與大小寫 · 繁簡轉換 · 時間戳與 Cron · 正則與 Diff · Markdown 預覽 · URL 與 User-Agent 解析 · 網站環境偵測（伺服器）
 
 ## 執行
 
@@ -37,7 +37,7 @@ cd ../backend && ./.venv/Scripts/python -m uvicorn app.main:app --host 127.0.0.1
 
 ### 容量設定（網站環境偵測）
 
-這是唯一會用到伺服器資源的工具；其他 13 項在使用者瀏覽器內運算，不受這些設定影響。
+這是唯一會用到伺服器資源的工具；其他 16 項在使用者瀏覽器內運算，不受這些設定影響。
 
 | 變數 | 預設 | 說明 |
 | --- | --- | --- |
@@ -72,10 +72,10 @@ cd ../backend && ./.venv/Scripts/python -m uvicorn app.main:app --host 127.0.0.1
 cd backend && ./.venv/Scripts/python -m pytest -q
 cd backend && ./.venv/Scripts/python -m ruff check . && ./.venv/Scripts/python -m ruff format --check .
 
-# 前端：型別、ESLint、Prettier、單元測試（RFC 6238 向量、精確 JSON、時區解析、語系完整性）
+# 前端：型別、ESLint、Prettier、單元測試（RFC 6238 向量、精確 JSON、時區解析、WCAG 對比與色彩轉換、字數統計、語系完整性）
 cd frontend && npm run check
 
-# 端對端（Playwright）：建置後由 FastAPI 提供，用真實瀏覽器逐項操作 14 項工具與 5 種語系
+# 端對端（Playwright）：建置後由 FastAPI 提供，用真實瀏覽器逐項操作 17 項工具與 5 種語系
 cd frontend && npm run e2e
 ```
 
@@ -101,4 +101,4 @@ cd frontend && npm run e2e
 ## 語系
 
 各工具的字串在 `frontend/src/tools/<tool>/strings.json`，共用字串在 `frontend/src/i18n/common.json`。
-**簡體中文由繁體自動轉換**：只改 `zh-TW`，然後執行 `npm run i18n:cn`，不要手改 `zh-CN`。語系測試會檢查五種語言的鍵與 `{參數}` 是否一致。
+**簡體中文由繁體自動轉換**：只改 `zh-TW`，然後執行 `npm run i18n:cn`，不要手改 `zh-CN`。OpenCC 轉錯的大陸用語（例如「字首」被轉成「前缀」），加到 `scripts/gen-zh-cn.mjs` 的 `FIX` 表。語系測試會檢查五種語言的鍵與 `{參數}` 是否一致。

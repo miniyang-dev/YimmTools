@@ -28,8 +28,8 @@ YimmTool 是一個免註冊、零安裝的線上小工具站：貼上資料就�
 
 ## Capabilities and Constraints
 
-共 14 項工具（PDF 不在範圍）：
-圖片壓縮／轉換、JSON、YAML／CSV／JSON 互轉、Base64／URL 編解碼、JWT 解碼、QR Code 產生／解碼、TOTP 驗證碼、密碼與 UUID、Hash／HMAC、時間戳與 Cron、正則與 Diff、Markdown 預覽、URL＋User-Agent 解析、網站環境偵測（CDN／WAF／雲端）。
+共 17 項工具（PDF 不在範圍）：
+圖片壓縮／轉換、色彩轉換與對比、JSON、YAML／CSV／JSON 互轉、Base64／URL 編解碼、JWT 解碼、QR Code 產生／解碼、TOTP 驗證碼、密碼與 UUID、Hash／HMAC、字數統計與大小寫、繁簡轉換、時間戳與 Cron、正則與 Diff、Markdown 預覽、URL＋User-Agent 解析、網站環境偵測（CDN／WAF／雲端）。
 - 語系五種：繁體中文（預設）、English、简体中文、Español、日本語。不含 RTL。
 - 深色與淺色主題，預設跟隨系統。
 - 後端工具只做公開資訊的被動查詢；必須防 SSRF（拒絕私有／迴環／link-local／metadata 位址、釘住解析 IP、逐跳檢查重新導向、限流、逾時、大小上限）。

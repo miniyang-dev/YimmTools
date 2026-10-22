@@ -1,0 +1,28 @@
+{
+  "id": "color",
+  "group": "image",
+  "order": 2,
+  "server": false,
+  "strings": {
+    "zh-TW": {
+      "name": "色彩轉換與對比",
+      "desc": "HEX、RGB、HSL、OKLCH 互轉，並檢查文字與背景是否符合 WCAG 對比。"
+    },
+    "en": {
+      "name": "Color converter & contrast",
+      "desc": "Convert between HEX, RGB, HSL and OKLCH, and check text against WCAG contrast."
+    },
+    "zh-CN": {
+      "name": "色彩转换与对比",
+      "desc": "HEX、RGB、HSL、OKLCH 互转，并检查文字与背景是否符合 WCAG 对比。"
+    },
+    "es": {
+      "name": "Colores y contraste",
+      "desc": "Convierte entre HEX, RGB, HSL y OKLCH, y comprueba el contraste WCAG del texto."
+    },
+    "ja": {
+      "name": "カラー変換・コントラスト",
+      "desc": "HEX・RGB・HSL・OKLCH を相互変換し、文字と背景の WCAG コントラストを確認。"
+    }
+  }
+}

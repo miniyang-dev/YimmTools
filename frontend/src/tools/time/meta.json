@@ -1,7 +1,7 @@
 {
   "id": "time",
   "group": "text",
-  "order": 10,
+  "order": 13,
   "server": false,
   "strings": {
     "zh-TW": {
